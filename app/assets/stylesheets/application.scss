@@ -51,3 +51,15 @@ header {
     -o-transition: all .3s;
     transition: all .3s;
 }
+
+.menu-toggle a {
+    height: 18px;
+    float: right;
+    margin-top: 38px;
+    display: block;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
