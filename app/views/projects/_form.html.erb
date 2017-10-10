@@ -1,0 +1,32 @@
+<% if @project.errors.any? %>
+
+<h3><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h3>
+
+<ul>
+  <% @project.errors.full_messages.each do |msg| %>
+    <li> <%= msg %> </li>
+  <% end %>
+</ul>
+
+<% end %>
+
+<%= form_for(@project) do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+
+  <%= f.label :desc %>
+  <%= f.text_field :desc %>
+
+  <%= f.label :image_url %>
+  <%= f.text_field :image_url %>
+
+  <%= f.label :github_link %>
+  <%= f.text_field :github_link %>
+
+  <%= f.submit %>
+
+<% end %>
