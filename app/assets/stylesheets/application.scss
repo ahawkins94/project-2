@@ -39,6 +39,11 @@ header {
     transition: all .3s;
 }
 
+h3 {
+    font-family: "Khula",sans-serif;
+    font-weight: 100;
+}
+
 .header-logo a img {
     width: 159.438px;
     display: inline-block;
@@ -52,6 +57,12 @@ header {
     transition: all .3s;
 }
 
+
+header.smaller {
+    height: 65px;
+    background-color: rgba(1,24,27,.95);
+}
+
 .menu-toggle a {
     height: 18px;
     float: right;
@@ -62,4 +73,94 @@ header {
     -ms-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
+}
+
+.btn-open:after {
+    content: "";
+    background-image: url(menutoggle.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 32px;
+    height: 19px;
+    position: relative;
+    transition-property: all .3s linear 0s;
+    -moz-transition: all .3s linear 0s;
+    -webkit-transition: all .3s linear 0s;
+    -o-transition: all .3s linear 0s;
+}
+
+.overlay {
+    overflow: scroll;
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(1,24,27,.97);
+    overflow: auto;
+    z-index: 99;
+}
+
+body, html {
+    font-family: "Raleway",sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #565d67;
+}
+
+.sticky-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    color: #fff;
+}
+
+.sticky-footer-left {
+    background: #01181b;
+    float: left;
+    display: block;
+    width: 50%;
+    border-top: 2px solid #34beef;
+    text-align: right;
+    padding: 3px 15px 17px 15px;
+}
+
+.sticky-footer-right {
+    background: #01181b;
+    float: left;
+    display: block;
+    width: 50%;
+    border-top: 2px solid #f10db9;
+    text-align: left;
+    padding: 3px 15px 17px 15px;
+}
+
+i.hire-a-consultant {
+    content: '';
+    background-image: url(hire-icon-white.png);
+   	display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 11px;
+    right: 0;
+    background-size: 35px;
+    background-repeat: no-repeat;
+}
+
+i.become-a-consultant {
+    content: '';
+    background-image: url(become-icon-white.png);
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 11px;
+    left: 0;
+    background-size: 35px;
+    background-repeat: no-repeat;
 }

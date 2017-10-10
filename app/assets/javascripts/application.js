@@ -15,3 +15,21 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require_tree .
+
+// (function(n){
+// 	var t={onReady:function(){
+// 				overlayNav:function(){
+// 					if(n(".overlay-nav").length){n(document).ready(function(){n(".menu-toggle a").click
+// 						(function(t){t.preventDefault();
+// 						n(".overlay").fadeToggle(200);n(this).toggleClass("btn-open").toggleClass("btn-close")})
+// 					});n(".overlay").on("click",
+// 						function(){
+// 							n(".overlay").fadeToggle(200);n(".menu-toggle a").toggleClass("btn-open").toggleClass("btn-close")
+// 	}
+// }
+
+// function () {
+// 	n(".overlay").fadeToggle(200);n(".menu-toggle a").toggleClass("btn-open").toggleClass("btn-close")
+// }
+
+   
