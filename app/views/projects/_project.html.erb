@@ -1,0 +1,11 @@
+<p>Title: <strong><%= project.title %></strong></p>
+<p>Author: <strong><%= project.author %></strong></p>
+<p>Desc: <%= project.desc %></p>
+<p>Github_link: <%= project.github_link %></p>
+
+<a href="https://github.com/ahawkins94"></a>
+<%= image_tag project.image_url %>
+<br>
+<%= link_to "Show Page", project if action_name == "index" %> |
+
+<br>
