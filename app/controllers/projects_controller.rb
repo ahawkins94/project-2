@@ -9,11 +9,11 @@ class ProjectsController < ApplicationController
   end
 
   def new
-    @project = Project.new
+    @project = current_user.projects.new
   end
 
   def create
-    @project = Project.create(project_params)
+    @project = current_user.projects.create(project_params)
     if @project.save
       redirect_to @project
     else
@@ -22,11 +22,11 @@ class ProjectsController < ApplicationController
   end
 
   def edit
-    @project = Project.find(params[:id]) 
+    @project = current_user.projects.find(params[:id]) 
   end
 
   def update
-    @project = Project.find(params[:id])
+    @project = current_user.projects.find(params[:id])
     if @project.update(project_params)
       redirect_to @project
     else
@@ -35,8 +35,10 @@ class ProjectsController < ApplicationController
   end
 
   def destroy
-    Project.destroy(params[:id])
-    redirect_to projects_url
+    if current_user
+    current_user.projects.destroy(params[:id])
+      redirect_to projects_url
+    end
   end
 
   protected
