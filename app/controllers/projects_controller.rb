@@ -21,22 +21,40 @@ class ProjectsController < ApplicationController
   end
 
   def edit
-    @project = current_user.projects.find(params[:id]) 
+    if current_user.admin?
+      @project = Project.find(params[:id])
+    else
+      @project = current_user.projects.find(params[:id]) 
+    end
   end
 
   def update
-    @project = current_user.projects.find(params[:id])
-    if @project.update(project_params)
-      redirect_to @project
+    if current_user.admin?
+      @project = Project.find(params[:id])
+      if @project.update(project_params)
+        redirect_to @project
+      else
+        render :edit
+      end
     else
-      render :edit
+      @project = current_user.projects.find(params[:id])
+      if @project.update(project_params)
+        redirect_to @project
+      else
+        render :edit
+      end
     end
   end
 
   def destroy
-    if current_user
-    current_user.projects.destroy(params[:id])
+    if current_user.admin?
+      Project.destroy(params[:id])
       redirect_to projects_url
+    else
+      if current_user
+      current_user.projects.destroy(params[:id])
+        redirect_to projects_url
+      end
     end
   end
 
