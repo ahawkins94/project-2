@@ -1,12 +1,8 @@
 <h1>Project Show Page</h1>
-
-
   <%= render @project %>
-
 <br>
 
 <%= link_to "Back", projects_path %> |
-
 <% if (@user != nil && (@user.id == @project.user_id || @user.admin == true))%>
 <%= link_to "Edit", edit_project_path(@project) %> |
 <%= link_to "Destroy", @project, method: :delete, data: { confirm: "Are you sure?" } %>
