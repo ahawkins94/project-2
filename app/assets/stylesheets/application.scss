@@ -19,7 +19,13 @@
 
 body {
     background-color: white;
-    }
+    margin: 0 0 100px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
 
 nav {
     width: 100%;
@@ -113,10 +119,12 @@ body, html {
     font-size: 1rem;
     font-weight: 300;
     color: #565d67;
+    height: 100%;
 }
 
 .sticky-footer {
     width: 100%;
+    display: inline-block;
     position: relative;
     bottom: 0;
     z-index: 1;
@@ -239,6 +247,18 @@ i.become-a-consultant {
     color: #3596e0;
     left: initial;
     font-size: 14px;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -41px;
+    display: block;
+}
+
+.sticky-footer, .push {
+    height: 41px;
 }
 
 .index{
