@@ -1,12 +1,32 @@
 <h1>Project Show Page</h1>
 
-  <%= render @project %>
-
+  <div class="index">
+  <div class="row">
+  <div class="col-sm-4 col-md-12">
+    <div class="thumbnail">
+      <div class="caption">
+        <p>Title: <strong><%= @project.title %></strong></p>
+        <p>Author: <strong><%= @project.author %></strong></p>
+        <p>Desc: <%= @project.desc %></p>
+        <%unless action_name == "index"%>
+        <p>Github_link: <a href="<%=@project.github_link%>">project.github_link</a> </p>
+        <%end%>
+        <%= image_tag @project.image_url, style:"height: 300px; width: 700px;" %>
+        <br>
+        <%= link_to "Back", projects_path %> |
+		<%= link_to "Edit", edit_project_path(@project) %> |
+		<%= link_to "Destroy", @project, method: :delete, data: { confirm: "Are you sure?" } %>
+        <br>
+        <p><a href="#" class="btn btn-primary" role="button">Like</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 <br>
 
 
-<%= link_to "Back", projects_path %> |
-<%= link_to "Edit", edit_project_path(@project) %> |
-<%= link_to "Destroy", @project, method: :delete, data: { confirm: "Are you sure?" } %>
+
+
 
 
