@@ -5,3 +5,16 @@
 <br>
 
 <%= render @projects %>
+
+
+<% @projects.each do |project| %>
+  <h1><%= link_to project.desc, project %></h1>
+
+  <p>
+    <%= markdown(project.desc) %>
+  </p>
+
+  <% if post != @projects.last %>
+  <hr />
+  <% end %>
+<% end %>
