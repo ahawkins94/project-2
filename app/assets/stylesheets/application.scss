@@ -21,7 +21,7 @@ body {
     background-color: white;
     }
 
-header {
+nav {
     width: 100%;
     height: 120px;
     overflow: hidden;
@@ -37,6 +37,17 @@ header {
     -ms-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
+}
+
+.shrink {
+  height: 35px;
+  background-color: rgba(1,24,27,.95);
+}
+
+nav.navbar{
+  background-color:#01181b;
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
 }
 
 h3 {
@@ -57,55 +68,40 @@ h3 {
     transition: all .3s;
 }
 
+nav.shrink .header-logo a img {
+    height: 30px;
+    margin-top: 0;
+    line-height: 50px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s
+}
+
 .home-link {
     position: absolute;
     top: 63px;
 }
 
-header.smaller {
-    height: 65px;
-    background-color: rgba(1,24,27,.95);
-}
-
-.menu-toggle a {
-    height: 18px;
-    float: right;
-    margin-top: 38px;
-    display: block;
+nav.shrink .home-link{
+    top: 8px;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -ms-transition: all .3s;
     -o-transition: all .3s;
-    transition: all .3s;
+    transition: all .3s
 }
 
-.btn-open:after {
-    content: "";
-    background-image: url(menutoggle.svg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: block;
-    width: 32px;
-    height: 19px;
-    position: relative;
-    transition-property: all .3s linear 0s;
-    -moz-transition: all .3s linear 0s;
-    -webkit-transition: all .3s linear 0s;
-    -o-transition: all .3s linear 0s;
+nav.shrink .navbar-text{
+    top: 8px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s
 }
 
-.overlay {
-    overflow: scroll;
-    display: none;
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(1,24,27,.97);
-    overflow: auto;
-    z-index: 99;
-}
 
 body, html {
     font-family: "Raleway",sans-serif;
