@@ -9,7 +9,7 @@
 
 u1 = User.create!(email:"testemail@pmail.com", password:"yesyes")
 u2 = User.create!(email:"testemail2@pmail.com", password:"yesyes2")
-u3 = User.create!(email:"admin@pmail.com", password:"admintest")
+u3 = User.create!(email:"admin@pmail.com", password:"admintest", admin:true)
 
 
 Project.create(title: "Project 1", author: "Barry the Chihuahua", user_id:u1.id, desc:"Sample Description", 
