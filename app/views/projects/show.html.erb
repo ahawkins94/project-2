@@ -1,37 +1,39 @@
 <h1>Project Show Page</h1>
 
-  <div class="index">
-  <div class="row">
-  <div class="col-sm-4 col-md-12">
-    <div class="thumbnail">
-      <div class="caption">
-        <p>Title: <strong><%= @project.title %></strong></p>
-        <p>Author: <strong><%= @project.author %></strong></p>
-        <p>Desc: <%= @project.desc %></p>
+  <div class="show">
+ 	<div class="row">
+
+  	<div class="col-md-1">
+  	</div>
+  	<div class="col-md-10">
+        <div class="title"> <p><strong><%= @project.title %></strong></p> </div>
+        <div class="author"><p>By: <strong><%= @project.author %></strong></p></div>
         <%unless action_name == "index"%>
-        <p>Github_link: <a href="<%=@project.github_link%>">project.github_link</a> </p>
+        
         <%end%>
-        <%= image_tag @project.image_url, style:"height: 300px; width: 700px;" %>
+        <div class = "image1"><%= image_tag @project.image_url, style:"height: 300px; width: 800px;" %></div>
+        <div class="description"><p>Desc: <%= @project.desc %></p>
+        <p>Github_link: <a href="<%=@project.github_link%>">project.github_link</a> </p></div>
         <br>
         <%= link_to "Back", projects_path %> |
+
+		<% if (@user != nil && (@user.id == @project.user_id || @user.admin == true))%>
 		<%= link_to "Edit", edit_project_path(@project) %> |
 		<%= link_to "Destroy", @project, method: :delete, data: { confirm: "Are you sure?" } %>
+		<% end %>
         <br>
         <p><a href="#" class="btn btn-primary" role="button">Like</a></p>
-      </div>
+
+        </div>
+        <div class="col-md-1">
+  		</div>
     </div>
-  </div>
+   
 </div>
-</div>
-<br>
 
 
-<%= link_to "Back", projects_path %> |
 
-<% if (@user != nil && (@user.id == @project.user_id || @user.admin == true))%>
-<%= link_to "Edit", edit_project_path(@project) %> |
-<%= link_to "Destroy", @project, method: :delete, data: { confirm: "Are you sure?" } %>
-<% end %>
+
 
 
 
