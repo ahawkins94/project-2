@@ -1,0 +1,242 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+    background-color: white;
+    }
+
+header {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #01181b;
+    color: #fff;
+    padding: 10px 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+h3 {
+    font-family: "Khula",sans-serif;
+    font-weight: 100;
+}
+
+.header-logo a img {
+    width: 159.438px;
+    display: inline-block;
+    height: 60px;
+    margin-top: 18px;
+    line-height: 100px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.home-link {
+    position: absolute;
+    top: 63px;
+}
+
+header.smaller {
+    height: 65px;
+    background-color: rgba(1,24,27,.95);
+}
+
+.menu-toggle a {
+    height: 18px;
+    float: right;
+    margin-top: 38px;
+    display: block;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.btn-open:after {
+    content: "";
+    background-image: url(menutoggle.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 32px;
+    height: 19px;
+    position: relative;
+    transition-property: all .3s linear 0s;
+    -moz-transition: all .3s linear 0s;
+    -webkit-transition: all .3s linear 0s;
+    -o-transition: all .3s linear 0s;
+}
+
+.overlay {
+    overflow: scroll;
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(1,24,27,.97);
+    overflow: auto;
+    z-index: 99;
+}
+
+body, html {
+    font-family: "Raleway",sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #565d67;
+}
+
+.sticky-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    color: #fff;
+}
+
+.sticky-footer-left {
+    background: #01181b;
+    float: left;
+    display: block;
+    width: 50%;
+    border-top: 2px solid #34beef;
+    text-align: right;
+    padding: 3px 15px 17px 15px;
+}
+
+.sticky-footer a h3 {
+    color: #fff
+}
+
+.sticky-footer h3 {
+    text-transform: uppercase;
+    font-size: .75em;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.sticky-footer-left h3 {
+    padding-right: 10px;
+}
+
+.sticky-footer-right h3 {
+    padding-left: 10px;
+}
+
+.sticky-footer-right {
+    background: #01181b;
+    float: left;
+    display: block;
+    width: 50%;
+    border-top: 2px solid #f10db9;
+    text-align: left;
+    padding: 3px 15px 17px 15px;
+}
+
+i.hire-a-consultant {
+    content: '';
+    background-image: url(hire-icon-white.png);
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 11px;
+    right: 0;
+    background-size: 35px;
+    background-repeat: no-repeat;
+}
+
+i.become-a-consultant {
+    content: '';
+    background-image: url(become-icon-white.png);
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 11px;
+    left: 0;
+    background-size: 35px;
+    background-repeat: no-repeat;
+}
+
+.search-form .form-group {
+    float: right !important;
+    transition: all 0.35s, border-radius 0s;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+.search-form .form-group input.form-control {
+    padding-right: 20px;
+    border: 0 none;
+    background: transparent;
+    box-shadow: none;
+    display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+    display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+    /* Firefox 18- */
+    display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+    display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+    width: 100%;
+    border-radius: 4px 25px 25px 4px;
+}
+.search-form .form-group span.form-control-feedback {
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #3596e0;
+    left: initial;
+    font-size: 14px;
+}
