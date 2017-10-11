@@ -1,12 +1,20 @@
-<p>Title: <strong><%= project.title %></strong></p>
-<p>Author: <strong><%= project.author %></strong></p>
-<p>Desc: <%= project.desc %></p>
-<%unless action_name == "index"%>
-	<p>Github_link: <a href="<%=project.github_link%>">project.github_link</a> </p>
-<%end%>
+<div class="row", style="position:;float:left; margin-left: 20px">
+  <div class="col-sm-4 col-md-12">
+    <div class="thumbnail">
+      <div class="caption">
+        <p>Title: <strong><%= project.title %></strong></p>
+        <p>Author: <strong><%= project.author %></strong></p>
+        <p>Desc: <%= project.desc %></p>
+        <%unless action_name == "index"%>
+        <p>Github_link: <a href="<%=project.github_link%>">project.github_link</a> </p>
+        <%end%>
+        <%= image_tag project.image_url, style:"height: 300px; width: 400px;" %>
+        <br>
+        <%= link_to "Show Page", project if action_name == "index" %> |
+        <br>
+        <p><a href="#" class="btn btn-primary" role="button">Like</a></p>
+      </div>
+    </div>
+  </div>
+</div>
 
-<%= image_tag project.image_url, style:"height: auto; width: 200px;" %>
-<br>
-<%= link_to "Show Page", project if action_name == "index" %> |
-
-<br>
