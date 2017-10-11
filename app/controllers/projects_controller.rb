@@ -24,7 +24,13 @@ class ProjectsController < ApplicationController
     if current_user.admin?
       @project = Project.find(params[:id])
     else
-      @project = current_user.projects.find(params[:id]) 
+      begin
+        if (current_user.projects.find(params[:id]) == Project.find(params[:id]))
+          @project = current_user.projects.find(params[:id])
+        end
+      rescue
+        redirect_to projects_url
+      end
     end
   end
 
@@ -51,8 +57,10 @@ class ProjectsController < ApplicationController
       Project.destroy(params[:id])
       redirect_to projects_url
     else
-      if current_user
-      current_user.projects.destroy(params[:id])
+      begin
+        current_user.projects.destroy(params[:id])
+        redirect_to projects_url
+      rescue
         redirect_to projects_url
       end
     end
