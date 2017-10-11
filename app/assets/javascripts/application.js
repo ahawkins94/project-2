@@ -22,6 +22,7 @@ $(function () {
       if ($(document).scrollTop() > 5) {
         $('nav').addClass('shrink');
         $('header-logo').addClass('shrink');
+        $('navbar-text').addClass('shrink');
       } else {
         $('nav').removeClass('shrink');
       }

@@ -93,15 +93,18 @@ nav.shrink .home-link{
     transition: all .3s
 }
 
+.navbar-text{
+    margin-top: 15px;
+    margin-bottom: 15px;}
+
 nav.shrink .navbar-text{
-    top: 8px;
+    margin-top: 7px;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -ms-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s
 }
-
 
 body, html {
     font-family: "Raleway",sans-serif;
