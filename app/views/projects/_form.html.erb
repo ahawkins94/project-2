@@ -11,7 +11,7 @@
 
 <% end %>
 
-<%= form_for(@project) do |f| %>
+<%= form_for(@project, multipart: true) do |f| %>
 
   <%= f.label :title %>
   <%= f.text_field :title %>
@@ -28,8 +28,10 @@
   <%= f.label :github_link %>
   <%= f.text_field :github_link %>
 
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+
   <%= f.submit %>
 
 <% end %>
-
 
