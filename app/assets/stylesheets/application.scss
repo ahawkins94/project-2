@@ -28,7 +28,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 1;
     background-color: #01181b;
     color: #fff;
     padding: 10px 0;
@@ -41,7 +41,8 @@ nav {
 
 .shrink {
   height: 35px;
-  background-color: rgba(1,24,27,.95);
+  background-color: #01181b;
+  opacity: 0.95;
 }
 
 nav.navbar{
@@ -118,7 +119,7 @@ body, html {
     width: 100%;
     position: fixed;
     bottom: 0;
-    z-index: 9999;
+    z-index: 1;
     color: #fff;
 }
 
