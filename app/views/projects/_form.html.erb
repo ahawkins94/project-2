@@ -1,32 +1,34 @@
 
-<% if @project.errors.any? %>
+<div class="form">
+    <div class="row">
+     <div class="col-md-1">
+     </div>
+      <div class="col-md-10">
+        <% if @project.errors.any? %>
 
-<h3><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h3>
+          <h3><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h3>
 
-<ul>
-  <% @project.errors.full_messages.each do |msg| %>
-    <li> <%= msg %> </li>
-  <% end %>
-</ul>
+          <ul>
+            <% @project.errors.full_messages.each do |msg| %>
+              <li> <%= msg %> </li>
+            <% end %>
+          </ul>
 
-<% end %>
+          <% end %>
+          <%= simple_form_for @project do |f| %>
+            <%= f.input :title %>
+            <%= f.input :author %>
+            <%= f.input :desc %>
+            <%= f.input :image_url %>
+            <%= f.input :github_link %>
+            <%= f.button :submit %>
+          <% end %>
+      <div class="col-md-1">
+      </div>
+    </div>
+  </div>
+</div>
 
-<%= form_for(@project) do |f| %>
-
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-
-  <%= f.label :author %>
-  <%= f.text_field :author %>
-
-  <%= f.label :desc %>
-  <%= f.text_field :desc %>
-
-  <%= f.label :image_url %>
-  <%= f.text_field :image_url %>
-
-  <%= f.label :github_link %>
-  <%= f.text_field :github_link %>
 
   <%= f.submit %>
 
