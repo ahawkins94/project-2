@@ -10,6 +10,10 @@ class Project < ApplicationRecord
     medium: '300x300>'
   }
 
+  def self.search(search)
+    where("title ILIKE ? OR author ILIKE ?", "%#{search}%", "%#{search}%",) 
+  end
+
   # Validate the attached image is image/jpg, image/png, etc
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
 end
