@@ -26,7 +26,10 @@
   <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <%= image_tag @project.image_url%>               
+               <img src="https://s3.eu-west-2.amazonaws.com/spartaproject2showme<%=@project.image.path%>"> 
+
+           <!-- s3.eu-west-2.amazonaws.com -->
+
             </div>
 
             <div class="item">
