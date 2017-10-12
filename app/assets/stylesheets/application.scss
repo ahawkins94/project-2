@@ -100,16 +100,8 @@ nav.shrink .home-link{
 }
 
 .navbar-text{
-    margin-top: 15px;
-    margin-bottom: 15px;}
-
-nav.shrink .navbar-text{
-    margin-top: 7px;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 body, html {
@@ -305,13 +297,23 @@ i.become-a-consultant {
   background-color: #f2dede;
   border-color: #ebccd1;
   color: #a94442;
-  position: absolute;
-  margin-top: 484px;
-  margin-left: 42%;
   }
 
 .alert-success {
     background-color: #dff0d8;
     border-color: #d6e9c6;
     color: #3c763d;
+}
+
+.alert {
+    padding: 5px;
+    margin-bottom: -65px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.logging {
+    margin-top: -3px;
+    margin-bottom: -3px;
+    margin-left: 18px;
 }
