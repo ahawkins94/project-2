@@ -38,3 +38,5 @@ Alongside the above languages, the following gems were also used in Ruby:
 * **dotenv-rails** - For security of AWS account credentials
 * **redcarpet** - For Markdown processing
 * **simple-form** - For layout/design of forms
+
+###Approach
