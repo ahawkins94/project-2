@@ -18,3 +18,23 @@ To run the application locally, follow the steps below:
 
 ###Technology used
 
+The web application was built using Ruby with the Ruby on Rails web application framework as the server side languages, with PostgreSQL used for the database management system. On the client side, HTML5, CSS and Javascript were used in conjunction with the bootstrap framework.
+
+Alongside the above languages, the following gems were also used in Ruby:
+
+* **rails 5.1.4** - To enable the rails framework
+* **pg 0.18** - To enable PostgreSQL
+* **puma 3.7** - To use puma as the app server
+* **sass-rails 5.0** - To use SCSS for stylesheets
+* **uglifier 1.3.0** - Javascript asset compressor
+* **coffee-rails 4.2** - To CoffeeScript for .coffee assets and views
+* **turbolinks 5** - For navigation optimisation
+* **jbuilder 2.5** - For building Build JSON APIs
+* **devise** - Authentication Solution
+* **bootstrap-sass 3.3.6** - To enable bootstrap framework in ruby
+* **jquery-rails** - To enable jquery library
+* **paperclip** - Image uploader
+* **aws-sdk 2.3** - For storing images using AWS
+* **dotenv-rails** - For security of AWS account credentials
+* **redcarpet** - For Markdown processing
+* **simple-form** - For layout/design of forms
