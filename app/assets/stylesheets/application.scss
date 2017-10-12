@@ -313,20 +313,39 @@ i.become-a-consultant {
     font-size: 15px;
 }
 
-.image1{
+.text-limit {
+  display: block;
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.image1 {
     text-align: center;
 }
 
-.new_project{
+.index-image {
+    height: 300px;
+    width: 400px;
+}
+
+.new_project {
     padding-top: 50px;
     position: absolute;
 }
 
-.form{
+.form {
     padding-top: 60px;
-    
-   /* position: absolute;*/
 }
+
+.overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 100px;
+    width: 400px;
+}
+
 .alert-danger {
   background-color: #f2dede;
   border-color: #ebccd1;
