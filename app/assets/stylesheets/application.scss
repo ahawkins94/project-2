@@ -18,7 +18,8 @@
 @import "bootstrap";
 
 body {
-    background-color: white;
+    background-image: url("128-29.jpg");
+    background-repeat: repeat;
 }
 
 html {
@@ -214,25 +215,31 @@ i.become-a-consultant {
     box-shadow: none;
     display:block;
 }
+
 .search-form .form-group input.form-control::-webkit-input-placeholder {
     display: none;
 }
+
 .search-form .form-group input.form-control:-moz-placeholder {
     /* Firefox 18- */
     display: none;
 }
+
 .search-form .form-group input.form-control::-moz-placeholder {
     /* Firefox 19+ */
     display: none;
 }
+
 .search-form .form-group input.form-control:-ms-input-placeholder {
     display: none;
 }
+
 .search-form .form-group:hover,
 .search-form .form-group.hover {
     width: 100%;
     border-radius: 4px 25px 25px 4px;
 }
+
 .search-form .form-group span.form-control-feedback {
     position: absolute;
     top: -1px;
@@ -249,8 +256,6 @@ i.become-a-consultant {
 }
 
 .wrapper {
-    background-image: url("128-29.jpg");
-    background-repeat: repeat;
     min-height: 100%;
     height: auto !important;
     display: block;
@@ -261,9 +266,15 @@ i.become-a-consultant {
 }
 
 .index{
-    float:left; 
     margin-left: 20px; 
     margin-top: 50px;
+    margin-right: 20px;
+}
+
+.img {
+    width: 100%;
+    display:block; 
+    height: auto;
 }
 
 .title{
@@ -276,7 +287,6 @@ i.become-a-consultant {
     text-align: center;
     font-size: 20px;
     margin-top: 150px;
-
 }
 
 .author{
@@ -287,16 +297,13 @@ i.become-a-consultant {
 .description{
     text-align: center;
     font-size: 15px;
-
 }
 
 .image1{
-
     text-align: center;
 }
 
 .new_project{
-    
     padding-top: 50px;
     position: absolute;
 }
@@ -305,5 +312,21 @@ i.become-a-consultant {
     padding-top: 60px;
     
    /* position: absolute;*/
+}
+.alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+  position: absolute;
+  margin-top: 484px;
+  margin-left: 42%;
+  }
 
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+    position: absolute;
+    margin-top: 122px;
+    margin-left: 1000px;
 }
