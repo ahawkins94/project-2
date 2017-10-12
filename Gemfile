@@ -39,11 +39,6 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'jquery-rails'
 
-
-
-
-
-
 gem 'redcarpet'
 
 group :development, :test do
