@@ -2,13 +2,17 @@
     <div class="col-xs-3 col-md-4">
       <div class="thumbnail">
         <div class="caption">
-          <p>Title: <strong><%= project.title %></strong></p>
-          <p>Author: <strong><%= project.author %></strong></p>
-          <p>Description: <%= markdown(project.desc) %></p>
+          <p>Title: <strong><%= truncate(markdown(project.title), length: 100, escape: false) %></strong></p>
+          <p>Author: <strong><%= truncate(markdown(project.author), length: 100, escape: false) %></strong></p>
+          <div class="overflow">
+            <p>Description:  <%= truncate(markdown(project.desc), length: 100, escape: false) %></p>
+          </div>
           <%unless action_name == "index"%>
           <p>Github_link: <a href="<%=project.github_link%>">project.github_link</a> </p>
           <%end%>
-          <%= image_tag project.image_url, class: "img"%>
+          <div class="index-image">
+            <%= image_tag project.image_url, class: "img"%>
+          </div>
           <br>
           <%= link_to "Show Page", project if action_name == "index" %> |
           <br>
