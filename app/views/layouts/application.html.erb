@@ -8,7 +8,85 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+<body>
+    <nav class="navbar navbar-fixed-top"> 
+        <div class="container clearfix"> 
+            <div class="row"> 
+                <div class="col-xs-2 col-md-2"> 
+                    <div class="header-logo"> 
+                        <a href="https://www.spartaglobal.com/"> 
+                            <%= image_tag "spartalogo.svg", class: "img-responsive", alt: "Sparta Global" %>
+                        </a> 
+                    </div>  
+                </div>
+                <div class="col-xs-7 col-md-6">
+                    <div class="home-link">
+                        <a href="/">All Projects</a> | 
+                    </div>
+                    <div class="new-link"><%= link_to "New Project", new_project_path %>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-md-4"> 
+                    <p class="navbar-text pull-right">
+                        <% if user_signed_in? %>
+                            Logged in as <strong><%= current_user.email %></strong>
+                            <br>
+                            <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+                            <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+                        
+
+                        <% else %>
+
+                            <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+                            <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+                                <% if notice %>
+                                    <p class="alert alert-success"><%= notice %></p> 
+                                <% end %> 
+
+                                <% if alert %>
+                                  <p class="alert alert-danger"><%= alert %></p>
+                                <% end %>
+                        <% end %>
+                    </p>
+                    <br><br><br>
+<!--                     <form action="" class="search-form">
+                        <div class="form-group has-feedback">
+                            <label for="search" class="sr-only">Search</label>
+                            <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                        </div>
+                    </form> -->
+                </div> 
+            </div> 
+        </div> 
+    </nav>
+
+   
+    
+  	<!-- look like sparta please -->
+    <div class="wrapper">
+        <%= yield %>
+        <div class="push"></div>
+    </div>
+
+    <section class="sticky-footer"> 
+        <div class="sticky-footer-left"> 
+          <a href="https://www.spartaglobal.com/contact/" title="Hire a consultant"> 
+            <h3>Hire a consultant</h3>
+            <i class="hire-a-consultant"></i> 
+          </a> 
+        </div> 
+        <div class="sticky-footer-right"> 
+          <a href="https://spartaglobal.typeform.com/to/sUIqYa" title="Join Our Academy" target="_blank"> 
+            <h3>Join Our Academy</h3><i class="become-a-consultant"></i> 
+          </a> 
+        </div> 
+    </section>
+
+
+
+
   </body>
 </html>
+
+
