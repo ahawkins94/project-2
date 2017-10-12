@@ -14,21 +14,18 @@
           </ul>
 
           <% end %>
-         <%= form_for(@project, multipart: true) do |f| %>
-            <%= f.label :title %>
-            <%= f.text_field :title %>
-            <%= f.label :author %>
-            <%= f.text_field :author %>
-            <%= f.label :desc %>
-            <%= f.text_field :desc %>
-            <%= f.label :github_link %>
-            <%= f.text_field :github_link %>
-            <%= f.label :image %>
-            <%= f.file_field :image %>
-            <%= f.submit %>  
-        <% end %>
+          <%= simple_form_for @project do |f| %>
+            <%= f.input :title %>
+            <%= f.input :author %>
+            <%= f.input :desc %>
+            <%= f.input :image_url %>
+            <%= f.input :github_link %>
+            <%= f.input :image, as: :file %>          
+            <%= f.button :submit %>
+          <% end %>
       <div class="col-md-1">
       </div>
     </div>
   </div>
 </div>
+
