@@ -47,10 +47,8 @@ gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'redcarpet'
 
-<<<<<<< HEAD
-=======
 gem 'simple_form'
->>>>>>> development
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
