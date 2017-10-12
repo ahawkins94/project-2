@@ -91,7 +91,21 @@ nav.shrink .header-logo a img {
     top: 63px;
 }
 
+.new-link {
+    position: absolute;
+    top: 63px;
+    left: 107px;
+}
 nav.shrink .home-link{
+    top: 8px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s
+}
+
+nav.shrink .new-link{
     top: 8px;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -105,7 +119,7 @@ nav.shrink .home-link{
     margin-bottom: 15px;}
 
 nav.shrink .navbar-text{
-    margin-top: 7px;
+    margin-top: -5px;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -ms-transition: all .3s;
@@ -299,16 +313,36 @@ i.become-a-consultant {
     font-size: 15px;
 }
 
-.image1{
+.text-limit {
+  display: block;
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.image1 {
     text-align: center;
 }
 
-.new_project{
+.index-image {
+    height: 300px;
+    width: 400px;
+}
+
+.new_project {
     padding-top: 50px;
 }
 
 .form{
     padding-top: 20px;
+}
+
+.overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 100px;
+    width: 400px;
 }
 
 .alert-danger {
