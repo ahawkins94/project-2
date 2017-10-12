@@ -49,7 +49,7 @@
         </div>
 
         <div class="description">
-          <p>Desc: <%= @project.desc %>
+          <p>Desc: <%= markdown(@project.desc) %>
           </p>
           <p>Github_link: <a href="<%=@project.github_link%>">project.github_link</a> 
           </p> 
