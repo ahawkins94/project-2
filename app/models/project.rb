@@ -11,7 +11,7 @@ class Project < ApplicationRecord
   }
 
   def self.search(search)
-    where("title ILIKE ? OR author ILIKE ?", "%#{search}%", "%#{search}%",) 
+    where("title ILIKE ? OR author ILIKE ? OR tags ILIKE? ", "%#{search}%", "%#{search}%", "%#{search}%") 
   end
 
   # Validate the attached image is image/jpg, image/png, etc
