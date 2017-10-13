@@ -80,7 +80,6 @@ class ProjectsController < ApplicationController
 
   protected
   def project_params
-    params.require(:project).permit(:title, :author, :desc, :image_url, :github_link, :image, :term, :live)
+    params.require(:project).permit(:title, :author, :desc, :github_link, :image, :term, :image2, :image3, :tags, :live)
   end
-
 end
