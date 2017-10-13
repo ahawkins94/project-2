@@ -16,6 +16,8 @@ To run the application locally, follow the steps below:
 8. Launch the web server, in the terminal run: **rails s**
 9. In your browser go to **localhost:3000**
 
+###Using the product
+
 ###Technology used
 
 The web application was built using Ruby with the Ruby on Rails web application framework as the server side languages, with PostgreSQL used for the database management system. On the client side, HTML5, CSS and Javascript were used in conjunction with the bootstrap framework.
@@ -41,4 +43,28 @@ Alongside the above languages, the following gems were also used in Ruby:
 
 ###Approach
 
-This project was tackled using the agile methodology.
+This project was tackled using the agile methodology. The following section outlines the various stages of the projects progression.
+
+##### Scoping Session
+
+The project began with a scoping session between the scrum team and the client, which established the product criteria and design. The client wished the design/aesthetics of the web application to match the design of the Sparta Global webiste as closely as possible.
+
+The base requirements were established as: 
+
+* Database for storing project data.
+* Login system.
+* Restful routes for projects.
+* Users can only edit/delete their own projects.
+* Project images stored on AWS.
+
+The following additonal features (in order of priority) were also established:
+
+1. Administrator login, who must give approval in order for created projects to go live on site.
+2. Search bar/ability to refine projects shown.
+3. GitHub data (e.g. number of commits and other insight data) for a project to appear on its relevant show page.
+4. Ability for users to write project desciption in markdown and have it rendered on the site.
+5. Like feature, where users can "like" projects.
+6. Ability to share project online.
+
+It was established that the client would not be contactable during
+
