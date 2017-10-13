@@ -4,21 +4,9 @@ class Project < ApplicationRecord
 	validates :github_link, format: { with: URI.regexp, message: " must contain a valid url" }
   validates :image, :image2, :image3, presence: { message: " must have an image file attached" }
 
-  has_attached_file :image, styles: {
-    thumb: '100x100>',
-    square: '200x200#',
-    medium: '300x300>'
-  }
-  has_attached_file :image2, styles: {
-    thumb: '100x100>',
-    square: '200x200#',
-    medium: '300x300>'
-  }
-  has_attached_file :image3, styles: {
-    thumb: '100x100>',
-    square: '200x200#',
-    medium: '300x300>'
-  }
+  has_attached_file :image
+  has_attached_file :image2
+  has_attached_file :image3
 
   def self.search(search)
     where("title ILIKE ? OR author ILIKE ?", "%#{search}%", "%#{search}%",) 
