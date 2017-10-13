@@ -9,7 +9,7 @@ class Project < ApplicationRecord
   has_attached_file :image3
 
   def self.search(search)
-    where("title ILIKE ? OR author ILIKE ? OR tags ILIKE? ", "%#{search}%", "%#{search}%", "%#{search}%") 
+    where("title ILIKE ? OR author ILIKE ?", "%#{search}%", "%#{search}%",) 
   end
 
   # Validate the attached image is image/jpg, image/png, etc
