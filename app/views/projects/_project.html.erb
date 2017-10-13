@@ -11,7 +11,7 @@
           <p>Github_link: <a href="<%=project.github_link%>">project.github_link</a> </p>
           <%end%>
           <div class="index-image">
-            <img src="https://s3.eu-west-2.amazonaws.com/spartaproject2showme<%=project.image.path%>"> 
+            <img src="https://s3.eu-west-2.amazonaws.com/spartaproject2showme<%=project.image.path%>" class="img-index"> 
           </div>
           <br>
           <%= link_to "Show Page", project if action_name == "index" %> |
