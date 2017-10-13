@@ -12,9 +12,13 @@
               <li> <%= msg %> </li>
             <% end %>
           </ul>
-
           <% end %>
+
           <%= simple_form_for @project do |f| %>
+
+              <%= f.label 'Live' %>
+              <%= f.check_box :live %>
+
             <%= f.input :title %>
             <%= f.input :author %>
             <%= f.input :desc %>
@@ -28,4 +32,5 @@
     </div>
   </div>
 </div>
+
 

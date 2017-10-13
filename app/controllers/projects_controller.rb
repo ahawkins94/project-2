@@ -9,7 +9,6 @@ class ProjectsController < ApplicationController
     end
   end
 
-
   def show
     @project = Project.find(params[:id])
     @user = current_user
@@ -58,6 +57,8 @@ class ProjectsController < ApplicationController
         render :edit
       end
     end
+    puts "params"
+    puts project_params
   end
 
   def destroy
@@ -76,7 +77,7 @@ class ProjectsController < ApplicationController
 
   protected
   def project_params
-    params.require(:project).permit(:title, :author, :desc, :image_url, :github_link, :image, :term)
+    params.require(:project).permit(:title, :author, :desc, :image_url, :github_link, :image, :term, :live)
   end
 
 end

@@ -51,8 +51,8 @@
           <br>
           <%= link_to "Back", projects_path %> |
 		      <% if (@user != nil && (@user.id == @project.user_id || @user.admin == true))%>
-		      <%= link_to "Edit", edit_project_path(@project) %> |
-		      <%= link_to "Destroy", @project, method: :delete, data: { confirm: "Are you sure?" } %> 
+  		      <%= link_to "Edit", edit_project_path(@project) %> |
+  		      <%= link_to "Destroy", @project, method: :delete, data: { confirm: "Are you sure?" } %> 
 		      <% end %> 
         <br>
           <p><a href="#" class="btn btn-primary" role="button">Like</a>
