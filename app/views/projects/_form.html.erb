@@ -16,8 +16,10 @@
 
           <%= simple_form_for @project do |f| %>
 
+            <% if (@user != nil && (@user.admin == true)) %>
               <%= f.label 'Live' %>
               <%= f.check_box :live %>
+            <% end %>
 
             <%= f.input :title %>
             <%= f.input :author %>

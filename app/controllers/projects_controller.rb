@@ -20,6 +20,8 @@ class ProjectsController < ApplicationController
 
   def create
     @project = current_user.projects.create(project_params)
+    @user = current_user
+
     if @project.save
       redirect_to @project
     else
@@ -28,6 +30,7 @@ class ProjectsController < ApplicationController
   end
 
   def edit
+    @user = current_user
     if current_user.admin?
       @project = Project.find(params[:id])
     else
