@@ -363,6 +363,44 @@ i.become-a-consultant {
     margin-left: 1000px;
 }
 
+#search-form input[type=text] {
+    height: 35px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: white;
+    padding-left: 23px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: -8px;
+    margin-left: 10%;
+}
+#search-form input[type=submit] {
+    margin-left: 2%;
+    margin-top: -7.5px;
+    color: #63717f;
+    padding: 6px 12px 6px 12px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    float: left;
+    border: none;
+    background: #2b303b;
+    color: #165db0;
+}
+#search-form input[type=search] {
+     width: 300px;
+      float: left;
+
+}
+#search-form {
+  width: 300px;
+  position: relative;
+  margin-left: 18%;
+
+}
+
 .img-show {
     height: 500px;
     width: 800px;
