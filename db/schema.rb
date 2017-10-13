@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20171013101240) do
     t.string "image3_content_type"
     t.integer "image3_file_size"
     t.datetime "image3_updated_at"
+    t.string "tags"
   end
 
   create_table "users", force: :cascade do |t|
