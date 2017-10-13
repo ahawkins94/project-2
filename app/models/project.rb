@@ -1,8 +1,8 @@
 class Project < ApplicationRecord
 	# belongs_to :user
-	validates :title, :author, :desc, :github_link, :image, :image2, :image3, presence: true
+	validates :title, :author, :desc, :github_link, presence: true
 	validates :github_link, format: { with: URI.regexp, message: " must contain a valid url" }
-  validates :image, :image2, :image3, presence: { true, message: " must have an image file attached" }
+  validates :image, :image2, :image3, presence: { message: " must have an image file attached" }
 
   has_attached_file :image, styles: {
     thumb: '100x100>',
