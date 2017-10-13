@@ -49,21 +49,16 @@
                         <% end %>
                     </p>
                     <br><br><br>
-<!--                     <form action="" class="search-form">
-                        <div class="form-group has-feedback">
-                            <label for="search" class="sr-only">Search</label>
-                            <input type="text" class="form-control" name="search" id="search" placeholder="search">
-                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
-                        </div>
-                    </form> -->
+
+                    <%= form_tag(projects_path, :method => "get", id: "search-form") do %>
+                        <%= text_field_tag :search, params[:search], placeholder: "Search Projects" %>
+                        <%= submit_tag "Search", :name => nil %>
+                    <% end %>
                 </div> 
             </div> 
         </div> 
     </nav>
 
-   
-    
-  	<!-- look like sparta please -->
     <div class="wrapper">
         <%= yield %>
         <div class="push"></div>

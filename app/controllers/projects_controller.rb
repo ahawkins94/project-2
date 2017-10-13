@@ -1,7 +1,13 @@
 class ProjectsController < ApplicationController
   def index
     @projects = Project.all
+    if params[:search]
+      @projects = Project.search(params[:search]).order("created_at DESC")
+    else
+      @projects = Project.all.order("created_at DESC")
+    end
   end
+
 
   def show
     @project = Project.find(params[:id])
@@ -69,7 +75,7 @@ class ProjectsController < ApplicationController
 
   protected
   def project_params
-    params.require(:project).permit(:title, :author, :desc, :image_url, :github_link, :image)
+    params.require(:project).permit(:title, :author, :desc, :image_url, :github_link, :image, :term)
   end
 
 end

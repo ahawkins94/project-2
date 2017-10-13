@@ -1,3 +1,9 @@
 <h1>Sparta Digital Showcase</h1>
 <br>
 <%= render @projects %>
+
+<div class="title">
+	<% if @projects.blank? %>
+	  <h4>There are no projects containing the term <%= params[:search] %>.</h4>
+	<% end %>
+</div>
