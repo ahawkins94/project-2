@@ -1,4 +1,5 @@
-<div class="index">
+<% if project.live == true || (@user != nil && @user.admin == true) %>
+  <div class="index">
     <div class="col-xs-3 col-md-4">
       <div class="thumbnail">
         <div class="caption">
@@ -19,4 +20,5 @@
         </div>
       </div>
     </div>
-</div>
+  </div>
+<% end %>

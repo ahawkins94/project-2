@@ -1,13 +1,13 @@
 class ProjectsController < ApplicationController
   def index
     @projects = Project.all
+    @user = current_user
     if params[:search]
       @projects = Project.search(params[:search]).order("created_at DESC")
     else
       @projects = Project.all.order("created_at DESC")
     end
   end
-
 
   def show
     @project = Project.find(params[:id])
@@ -20,6 +20,8 @@ class ProjectsController < ApplicationController
 
   def create
     @project = current_user.projects.create(project_params)
+    @user = current_user
+
     if @project.save
       redirect_to @project
     else
@@ -28,6 +30,7 @@ class ProjectsController < ApplicationController
   end
 
   def edit
+    @user = current_user
     if current_user.admin?
       @project = Project.find(params[:id])
     else
@@ -57,6 +60,8 @@ class ProjectsController < ApplicationController
         render :edit
       end
     end
+    puts "params"
+    puts project_params
   end
 
   def destroy
@@ -75,6 +80,6 @@ class ProjectsController < ApplicationController
 
   protected
   def project_params
-    params.require(:project).permit(:title, :author, :desc, :github_link, :image, :term, :image2, :image3, :tags)
+    params.require(:project).permit(:title, :author, :desc, :github_link, :image, :term, :image2, :image3, :tags, :live)
   end
 end
