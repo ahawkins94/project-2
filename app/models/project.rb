@@ -14,6 +14,11 @@ class Project < ApplicationRecord
     square: '200x200#',
     medium: '300x300>'
   }
+  has_attached_file :image3, styles: {
+    thumb: '100x100>',
+    square: '200x200#',
+    medium: '300x300>'
+  }
 
   def self.search(search)
     where("title ILIKE ? OR author ILIKE ?", "%#{search}%", "%#{search}%",) 
@@ -22,4 +27,5 @@ class Project < ApplicationRecord
   # Validate the attached image is image/jpg, image/png, etc
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
   validates_attachment_content_type :image2, :content_type => /\Aimage\/.*\Z/
+  validates_attachment_content_type :image3, :content_type => /\Aimage\/.*\Z/
 end
