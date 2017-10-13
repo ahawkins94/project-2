@@ -40,3 +40,5 @@ Alongside the above languages, the following gems were also used in Ruby:
 * **simple-form** - For layout/design of forms
 
 ###Approach
+
+This project was tackled using the agile methodology.
