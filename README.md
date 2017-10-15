@@ -72,4 +72,18 @@ It was established that the client would not be contactable during the developme
 
 The project consisted of 2 sprints, approximately 3 days each. The end of the first sprint was set for Thursday at midday, and the end of the second sprint was set for Sunday at 5 o'clock. An MVP was needed by the end of sprint 1.
 
-During the release planning, the indivual user stories were established and created.
+During the release planning, the indivual user stories were established and made, creating a product backlog. A physical and online task board was also created, with Trello used to make the latter. A comprehensive defintion of done for all tasks was also decided upon.
+
+#####Definiton of Done
+
+* Passes acceptance criteria.
+* Code runs without errors.
+* Code has been peer reviewed.
+* Code is clean & dry (e.g. indentation, whitespace).
+* Code is commented where necessary.
+* Changes have been documented.
+* In-line with Sparta styling/aesthetics.
+* Approved by product owner.
+* Code has been implemented into development branch.
+
+#####Sprint 1 Planning
