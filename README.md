@@ -18,6 +18,8 @@ To run the application locally, follow the steps below:
 
 ###Using the product
 
+
+
 ###Technology used
 
 The web application was built using Ruby with the Ruby on Rails web application framework as the server side languages, with PostgreSQL used for the database management system. On the client side, HTML5, CSS and Javascript were used in conjunction with the bootstrap framework.
@@ -117,6 +119,15 @@ Task Board at end of  Sprint 1:
 
 At the end of sprint 1. The current product was demoed to the Product Owner. The product owner feedback was that the demo had gone on too long and should be more brief in future, as well as pointing out that some html and styling had been added for features which were not currently functional (namely the search bar and like button). A few bugs were also discovered which needed to be addressed in sprint 2 with high priority.
 
+The bugs to address were:
+
+* Hide Search Bar until functional.
+* Ensure projects are all same size on index page:
+    * Clip description.
+    * Fix image size in CSS.
+* Navbar size reduction on scrolling down cuts off login links.
+* When there are validation errors on create/edit, footer doesn’t stay at bottom of page.
+
 #####Sprint Retrospective
 
 After the sprint review, the scrum team (minus the product owner) gathered together to discuss what they though had and hadn't gone well during sprint 1. To do this, the team used an emotional seismograph to show how they had been feeling during the sprint, as well as the "retrospective starfish" chart to discuss what the team had/hadn't done well and where to improve.
@@ -129,4 +140,14 @@ Retrospective Starfish:
 
 #####Sprint 2 Planning
 
-During the sprint one planning session, the user stories were prioritsed and the sprint 1 backlog decided upon. The tasks needed for the MVP were put into the sprint backlog. The acceptance criteria for the sprint 1 user stories was then decided upon, and using the planning poker method, each story was assigned story points. Rough inital apporaches for each task were also discussed.
+During the sprint two planning session, additional user stories were created to address the identified bug fixes required. The user stories were re-prioritsed and the sprint 2 backlog decided upon, with some featues being put as stretch goals. Again, acceptance criteria was then decided upon and story points assigned.
+
+Task Board at Start of Sprint 2:
+![Task Board at Start of Sprint 2](app/assets/images/agilephotos/TaskBoardSprint2.JPG)
+
+#####Sprint 2
+
+Again, during sprint 2 there were daily standups in the morning.
+
+Task Board during Sprint 2:
+![Task Board during Sprint 2](app/assets/images/agilephotos/TaskBoardSprint2Mid.JPG)
