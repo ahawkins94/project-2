@@ -1,0 +1,27 @@
+
+<!-- Checks if visitor/user/admin -->
+<% if project.live == true || (@user != nil && @user.admin == true) %>
+  <!-- Projects on Home Page -->
+  <div class="index">
+    <div class="col-xs-3 col-md-4">
+      <div class="thumbnail">
+        <div class="caption">
+          <p>Title: <strong><%= truncate(markdown(project.title), length: 100, escape: false) %></strong></p>
+          <p>Author: <strong><%= truncate(markdown(project.author), length: 100, escape: false) %></strong></p>
+          <div class="overflow">
+            <p>Description:  <%= truncate(markdown(project.desc), length: 100, escape: false) %></p>
+          </div>
+          <%unless action_name == "index"%>
+          <p>Github_link: <a href="<%=project.github_link%>">project.github_link</a> </p>
+          <%end%>
+          <div class="index-image">
+            <img src="https://s3.eu-west-2.amazonaws.com/spartaproject2showme<%=project.image.path%>" class="img-index"> 
+          </div>
+          <br>
+          <%= link_to "Show Page", project if action_name == "index" %> |
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
