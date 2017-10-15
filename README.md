@@ -49,6 +49,12 @@ This project was tackled using the agile methodology. The following section outl
 
 The project began with a scoping session between the scrum team and the client, which established the product criteria and design. The client wished the design/aesthetics of the web application to match the design of the Sparta Global webiste as closely as possible.
 
+Index Page Wireframe:
+![Index Page Wireframe](app/assets/images/agilephotos/IndexDesign.JPG)
+
+Show Page Wireframe:
+![Show Page Wireframe](app/assets/images/agilephotos/ShowDesign.JPG)
+
 The base requirements were established as: 
 
 * Database for storing project data.
@@ -96,4 +102,6 @@ A comprehensive defintion of done for all tasks was also decided upon.
 During the sprint one planning session, the user stories were prioritsed and the sprint 1 backlog decided upon. The tasks needed for the MVP were put into the sprint backlog. The acceptance criteria for the sprint 1 user stories was then decided upon, and using the planning poker method, each story was assigned story points. Rough inital apporaches for each task were also discussed.
 
 #####Sprint 1
+
+During sprint one, the team began each day with a standup involving the developers, scrum master(s) and sometimes to product owner.
 
