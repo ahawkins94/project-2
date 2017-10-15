@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171009165418) do
+ActiveRecord::Schema.define(version: 20171013104354) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,20 @@ ActiveRecord::Schema.define(version: 20171009165418) do
     t.text "github_link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
+    t.datetime "image_updated_at"
+    t.string "tags"
+    t.string "image2_file_name"
+    t.string "image2_content_type"
+    t.integer "image2_file_size"
+    t.datetime "image2_updated_at"
+    t.string "image3_file_name"
+    t.string "image3_content_type"
+    t.integer "image3_file_size"
+    t.datetime "image3_updated_at"
+    t.boolean "live", default: false
   end
 
   create_table "users", force: :cascade do |t|
@@ -39,6 +53,7 @@ ActiveRecord::Schema.define(version: 20171009165418) do
     t.inet "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "admin", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

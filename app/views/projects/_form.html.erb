@@ -1,0 +1,40 @@
+<div class="form">
+    <div class="row">
+     <div class="col-md-1">
+     </div>
+      <div class="col-md-10">
+        <% if @project.errors.any? %>
+
+          <h3><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h3>
+
+          <ul>
+            <% @project.errors.full_messages.each do |msg| %>
+              <li> <%= msg %> </li>
+            <% end %>
+          </ul>
+          <% end %>
+
+          <%= simple_form_for @project do |f| %>
+
+            <% if (@user != nil && (@user.admin == true)) %>
+              <%= f.label 'Live' %>
+              <%= f.check_box :live %>
+            <% end %>
+
+            <%= f.input :title %>
+            <%= f.input :author %>
+            <%= f.input :desc %>
+            <%= f.input :github_link %>
+            <%= f.input :tags %>
+            <%= f.input :image, as: :file %>          
+            <%= f.input :image2, as: :file %>          
+            <%= f.input :image3, as: :file %>          
+            <%= f.button :submit %>
+          <% end %>
+      <div class="col-md-1">
+      </div>
+    </div>
+  </div>
+</div>
+
+
