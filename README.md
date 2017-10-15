@@ -13,12 +13,19 @@ To run the application locally, follow the steps below:
 5. Create the database for the current rails environment, in the terminal run: **rake db:create**
 6. Perform migrations for the current environment, in the terminal run: **rake db:migrate**
 7. Populate the database with initial data, in the terminal run: **rake db:seed**
-8. Launch the web server, in the terminal run: **rails s**
-9. In your browser go to **localhost:3000**
+8. Create a .env file in the main directory, and add your user/bucket information.
+9. Launch the web server, in the terminal run: **rails s**
+10. In your browser go to **localhost:3000**
 
 ###Using the product
 
+The web application has 3 levels of access: visitors, users and administrators. 
 
+Visitors are able to see all projects on the index/homepage, as well as click on individual projects to see further details. Projects can also be search for by title, author or tags.
+
+In order to create a new project on the application, a visitor must create an account, login and become a "user". Users still have the same options as visitors, but are also able to create new projects, as well as edit/delete their own live projects.
+
+Administrators have full access to the web application. In addition to having the same privileges as users, admins are able to edit/delete any project regardless of whether or not they created it. Admins must also approve projects created by users, in order for the projects to go "live" and appear on the web application to non-admins.
 
 ###Technology used
 
@@ -151,3 +158,19 @@ Again, during sprint 2 there were daily standups in the morning.
 
 Task Board during Sprint 2:
 ![Task Board during Sprint 2](app/assets/images/agilephotos/TaskBoardSprint2Mid.JPG)
+
+###Screenshots
+
+(N.B All screenshots are taken from the perspective of an admin account.)
+
+Index/Home Page:
+![Index/Home Page](app/assets/images/agilephotos/Indexpage.png)
+
+Show Page:
+![Show Page](app/assets/images/agilephotos/Showpage.png)
+
+Create New Project Page:
+![Create New Project Page](app/assets/images/agilephotos/Newpage.png)
+
+Edit Project Page:
+![Edit Project Page](app/assets/images/agilephotos/Editpage.png)
