@@ -21,7 +21,7 @@ To run the application locally, follow the steps below:
 
 The web application has 3 levels of access: visitors, users and administrators. 
 
-Visitors are able to see all projects on the index/homepage, as well as click on individual projects to see further details. Projects can also be searched for by title, author or tags.
+Visitors are able to see all projects on the index/homepage, as well as click on individual projects to see further details. Projects can also be searched for by title, author or tags. On individual project pages, users are also able to click a button to share a project via twitter.
 
 In order to create a new project on the application, a visitor must create an account, login and become a "user". Users still have the same options as visitors, but are also able to create new projects, as well as edit/delete their own live projects.
 
