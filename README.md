@@ -117,5 +117,16 @@ Task Board at end of  Sprint 1:
 
 At the end of sprint 1. The current product was demoed to the Product Owner. The product owner feedback was that the demo had gone on too long and should be more brief in future, as well as pointing out that some html and styling had been added for features which were not currently functional (namely the search bar and like button). A few bugs were also discovered which needed to be addressed in sprint 2 with high priority.
 
+#####Sprint Retrospective
 
+After the sprint review, the scrum team (minus the product owner) gathered together to discuss what they though had and hadn't gone well during sprint 1. To do this, the team used an emotional seismograph to show how they had been feeling during the sprint, as well as the "retrospective starfish" chart to discuss what the team had/hadn't done well and where to improve.
 
+Emotional Seismograph:
+![Emotional Seismograph](app/assets/images/agilephotos/EmotionalSeismograph.JPG)
+
+Retrospective Starfish:
+![Retrospective Starfish](app/assets/images/agilephotos/RetrospectiveStarfish.JPG)
+
+#####Sprint 2 Planning
+
+During the sprint one planning session, the user stories were prioritsed and the sprint 1 backlog decided upon. The tasks needed for the MVP were put into the sprint backlog. The acceptance criteria for the sprint 1 user stories was then decided upon, and using the planning poker method, each story was assigned story points. Rough inital apporaches for each task were also discussed.
