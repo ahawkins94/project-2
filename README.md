@@ -66,5 +66,5 @@ The following additonal features (in order of priority) were also established:
 5. Like feature, where users can "like" projects.
 6. Ability to share project online.
 
-It was established that the client would not be contactable during
+It was established that the client would not be contactable during the development period, but the Product Owner had been fully briefed about the business requirements should there be any questions.
 
