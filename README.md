@@ -105,3 +105,17 @@ During the sprint one planning session, the user stories were prioritsed and the
 
 During sprint one, the team began each day with a standup involving the developers, scrum master(s) and sometimes to product owner.
 
+Task Board during Sprint 1:
+![Inital Task Board](app/assets/images/agilephotos/TaskBoardSprint1.JPG)
+
+At the end of Sprint 1, most of the MVP features had been completed, however the image hosting on AWS, styling and markdown features (which had been added during the sprint), were uncomplete and in-progress.
+
+Task Board at end of  Sprint 1:
+![Inital Task Board](app/assets/images/agilephotos/TaskBoardSprint1End.JPG)
+
+#####Sprint Review/Demonstration
+
+At the end of sprint 1. The current product was demoed to the Product Owner. The product owner feedback was that the demo had gone on too long and should be more brief in future, as well as pointing out that some html and styling had been added for features which were not currently functional (namely the search bar and like button). A few bugs were also discovered which needed to be addressed in sprint 2 with high priority.
+
+
+
