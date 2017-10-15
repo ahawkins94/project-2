@@ -70,14 +70,16 @@ It was established that the client would not be contactable during the developme
 
 #####Release Planning
 
-The project consisted of 2 sprints, approximately 3 days each. The end of the first sprint was set for Thursday at midday, and the end of the second sprint was set for Sunday at 5 o'clock. An MVP was needed by the end of sprint 1.
+The project consisted of 2 sprints, approximately 3 days each. The end of the first sprint was set for Thursday at midday, and the end of the second sprint was set for Sunday at 5 o'clock. An MVP (minimum viable product) was needed by the end of sprint 1.
 
-During the release planning, the indivual user stories were established and made, creating a product backlog. A physical and online task board was also created, with Trello used to make the latter. A comprehensive defintion of done for all tasks was also decided upon.
+During the release planning, the indivual user stories were established and made, creating a product backlog. The user stories were also colour-coded based on the feature(s) they corresponded to. Green corresponded to MVP tasks, yellow for authorisation featues, pink for refinement, and blue for general additonal features. A physical and online task board was also created, with Trello used to make the latter. 
 
 Inital Task Board:
 ![Inital Task Board](app/assets/images/agilephotos/TaskBoardInital.JPG)
 
-#####Definiton of Done
+A comprehensive defintion of done for all tasks was also decided upon.
+
+######Definiton of Done:
 
 * Passes acceptance criteria.
 * Code runs without errors.
@@ -90,3 +92,8 @@ Inital Task Board:
 * Code has been implemented into development branch.
 
 #####Sprint 1 Planning
+
+During the sprint one planning session, the user stories were prioritsed and the sprint 1 backlog decided upon. The tasks needed for the MVP were put into the sprint backlog. The acceptance criteria for the sprint 1 user stories was then decided upon, and using the planning poker method, each story was assigned story points. Rough inital apporaches for each task were also discussed.
+
+#####Sprint 1
+
