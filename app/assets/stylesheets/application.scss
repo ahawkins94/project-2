@@ -21,6 +21,7 @@ body {
     background-image: url("media-hub-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 html {
@@ -420,4 +421,8 @@ i.become-a-consultant {
     position: relative;
     left: 48%;
     padding: 1px;
+}
+
+.thumbnail {
+    background-color: rgba(255, 255, 255, 0.8);
 }
