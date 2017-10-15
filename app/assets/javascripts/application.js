@@ -17,7 +17,7 @@
 //= require_tree .
 
 $(function () {
-
+// Shrink Navbar when scrolling
     $(window).scroll(function() {
       if ($(document).scrollTop() > 5) {
         $('nav').addClass('shrink');
