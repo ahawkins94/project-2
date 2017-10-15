@@ -74,6 +74,9 @@ The project consisted of 2 sprints, approximately 3 days each. The end of the fi
 
 During the release planning, the indivual user stories were established and made, creating a product backlog. A physical and online task board was also created, with Trello used to make the latter. A comprehensive defintion of done for all tasks was also decided upon.
 
+Inital Task Board:
+![Inital Task Board](app/assets/images/agilephotos/TaskBoardInital.JPG)
+
 #####Definiton of Done
 
 * Passes acceptance criteria.
