@@ -43,7 +43,7 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-        <div class="description">
+      <div class="description">
           <p>Desc: <%= markdown(@project.desc) %>
           </p>
           <p>Github_link: <a href="<%=@project.github_link%>">project.github_link</a> 
@@ -58,6 +58,16 @@
         <br>
           <p><a href="#" class="btn btn-primary" role="button">Like</a>
           </p>
+           <!-- AddToAny BEGIN -->
+          <div class="share">
+            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+              <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+              <a class="a2a_button_twitter"></a>
+              <a class="a2a_button_linkedin"></a>
+            </div>
+          </div>
+            <script async src="https://static.addtoany.com/menu/page.js"></script>
+            <!-- AddToAny END -->
         </div>
       </div>
       <div class="col-md-1">
