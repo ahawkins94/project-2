@@ -18,8 +18,9 @@
 @import "bootstrap";
 
 body {
-    background-image: url("128-29.jpg");
-    background-repeat: repeat;
+    background-image: url("media-hub-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 html {
@@ -279,7 +280,7 @@ i.become-a-consultant {
     height: 41px;
 }
 
-.index{
+.index {
     margin-left: 20px; 
     margin-top: 50px;
     margin-right: 20px;
