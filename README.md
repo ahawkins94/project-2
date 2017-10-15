@@ -1,4 +1,4 @@
-# Sparta Digital Showcase
+#Sparta Digital Showcase
 
 A web application portfolio for displaying Sparta projects.
 
@@ -68,3 +68,8 @@ The following additonal features (in order of priority) were also established:
 
 It was established that the client would not be contactable during the development period, but the Product Owner had been fully briefed about the business requirements should there be any questions.
 
+#####Release Planning
+
+The project consisted of 2 sprints, approximately 3 days each. The end of the first sprint was set for Thursday at midday, and the end of the second sprint was set for Sunday at 5 o'clock. An MVP was needed by the end of sprint 1.
+
+During the release planning, the indivual user stories were established and created.
