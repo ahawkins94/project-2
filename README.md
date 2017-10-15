@@ -1,8 +1,8 @@
-#Sparta Digital Showcase
+# Sparta Digital Showcase
 
 A web application portfolio for displaying Sparta projects.
 
-###How to run
+### How to run
 
 To run the application locally, follow the steps below:
 
@@ -17,7 +17,7 @@ To run the application locally, follow the steps below:
 9. Launch the web server, in the terminal run: **rails s**
 10. In your browser go to **localhost:3000**
 
-###Using the product
+### Using the product
 
 The web application has 3 levels of access: visitors, users and administrators. 
 
@@ -27,7 +27,7 @@ In order to create a new project on the application, a visitor must create an ac
 
 Administrators have full access to the web application. In addition to having the same privileges as users, admins are able to edit/delete any project regardless of whether or not they created it. Admins must also approve projects created by users, in order for the projects to go "live" and appear on the web application to non-admins.
 
-###Technology used
+### Technology used
 
 The web application was built using Ruby with the Ruby on Rails web application framework as the server side languages, with PostgreSQL used for the database management system. On the client side, HTML5, CSS and Javascript were used in conjunction with the bootstrap framework.
 
@@ -50,7 +50,7 @@ Alongside the above languages, the following gems were also used in Ruby:
 * **redcarpet** - For Markdown processing
 * **simple-form** - For layout/design of forms
 
-###Approach
+### Approach
 
 This project was tackled using the agile methodology. The following section outlines the various stages of the projects progression.
 
@@ -83,7 +83,7 @@ The following additonal features (in order of priority) were also established:
 
 It was established that the client would not be contactable during the development period, but the Product Owner had been fully briefed about the business requirements should there be any questions.
 
-#####Release Planning
+##### Release Planning
 
 The project consisted of 2 sprints, approximately 3 days each. The end of the first sprint was set for Thursday at midday, and the end of the second sprint was set for Sunday at 5 o'clock. An MVP (minimum viable product) was needed by the end of sprint 1.
 
@@ -94,7 +94,7 @@ Inital Task Board:
 
 A comprehensive defintion of done for all tasks was also decided upon.
 
-######Definiton of Done:
+###### Definiton of Done:
 
 * Passes acceptance criteria.
 * Code runs without errors.
@@ -106,11 +106,11 @@ A comprehensive defintion of done for all tasks was also decided upon.
 * Approved by product owner.
 * Code has been implemented into development branch.
 
-#####Sprint 1 Planning
+##### Sprint 1 Planning
 
 During the sprint one planning session, the user stories were prioritsed and the sprint 1 backlog decided upon. The tasks needed for the MVP were put into the sprint backlog. The acceptance criteria for the sprint 1 user stories was then decided upon, and using the planning poker method, each story was assigned story points. Rough inital apporaches for each task were also discussed.
 
-#####Sprint 1
+##### Sprint 1
 
 During sprint one, the team began each day with a standup involving the developers, scrum master(s) and sometimes to product owner.
 
@@ -122,7 +122,7 @@ At the end of Sprint 1, most of the MVP features had been completed, however the
 Task Board at end of  Sprint 1:
 ![Inital Task Board](app/assets/images/agilephotos/TaskBoardSprint1End.JPG)
 
-#####Sprint Review/Demonstration
+##### Sprint Review/Demonstration
 
 At the end of sprint 1. The current product was demoed to the Product Owner. The product owner feedback was that the demo had gone on too long and should be more brief in future, as well as pointing out that some html and styling had been added for features which were not currently functional (namely the search bar and like button). A few bugs were also discovered which needed to be addressed in sprint 2 with high priority.
 
@@ -135,7 +135,7 @@ The bugs to address were:
 * Navbar size reduction on scrolling down cuts off login links.
 * When there are validation errors on create/edit, footer doesn’t stay at bottom of page.
 
-#####Sprint Retrospective
+##### Sprint Retrospective
 
 After the sprint review, the scrum team (minus the product owner) gathered together to discuss what they though had and hadn't gone well during sprint 1. To do this, the team used an emotional seismograph to show how they had been feeling during the sprint, as well as the "retrospective starfish" chart to discuss what the team had/hadn't done well and where to improve.
 
@@ -145,21 +145,21 @@ Emotional Seismograph:
 Retrospective Starfish:
 ![Retrospective Starfish](app/assets/images/agilephotos/RetrospectiveStarfish.JPG)
 
-#####Sprint 2 Planning
+##### Sprint 2 Planning
 
 During the sprint two planning session, additional user stories were created to address the identified bug fixes required. The user stories were re-prioritsed and the sprint 2 backlog decided upon, with some featues being put as stretch goals. Again, acceptance criteria was then decided upon and story points assigned.
 
 Task Board at Start of Sprint 2:
 ![Task Board at Start of Sprint 2](app/assets/images/agilephotos/TaskBoardSprint2.JPG)
 
-#####Sprint 2
+##### Sprint 2
 
 Again, during sprint 2 there were daily standups in the morning.
 
 Task Board during Sprint 2:
 ![Task Board during Sprint 2](app/assets/images/agilephotos/TaskBoardSprint2Mid.JPG)
 
-###Screenshots
+### Screenshots
 
 (N.B All screenshots are taken from the perspective of an admin account.)
 
