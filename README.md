@@ -50,6 +50,22 @@ Alongside the above languages, the following gems were also used in Ruby:
 * **redcarpet** - For Markdown processing
 * **simple-form** - For layout/design of forms
 
+### Screenshots
+
+(N.B All screenshots are taken from the perspective of an admin account.)
+
+Index/Home Page:
+![Index/Home Page](app/assets/images/agilephotos/Indexpage.png)
+
+Show Page:
+![Show Page](app/assets/images/agilephotos/Showpage.png)
+
+Create New Project Page:
+![Create New Project Page](app/assets/images/agilephotos/Newpage.png)
+
+Edit Project Page:
+![Edit Project Page](app/assets/images/agilephotos/Editpage.png)
+
 ### Approach
 
 This project was tackled using the agile methodology. The following section outlines the various stages of the projects progression.
@@ -159,18 +175,10 @@ Again, during sprint 2 there were daily standups in the morning.
 Task Board during Sprint 2:
 ![Task Board during Sprint 2](app/assets/images/agilephotos/TaskBoardSprint2Mid.JPG)
 
-### Screenshots
+##### Sprint Review/Demonstration
 
-(N.B All screenshots are taken from the perspective of an admin account.)
+The final product was demoed to the Product Owner/Scrum Master at the end of Sprint 2. All featues were implemented and functional except for the like button and GitHub data.
 
-Index/Home Page:
-![Index/Home Page](app/assets/images/agilephotos/Indexpage.png)
+##### Sprint Retrospective
 
-Show Page:
-![Show Page](app/assets/images/agilephotos/Showpage.png)
-
-Create New Project Page:
-![Create New Project Page](app/assets/images/agilephotos/Newpage.png)
-
-Edit Project Page:
-![Edit Project Page](app/assets/images/agilephotos/Editpage.png)
+After the sprint review, the scrum team (minus the product owner) gathered together for a the final sprint retrospective, discussing what did/didn't go well and what they'd do differently in future. Again an emotional seismograph and retrospective starfish chart were used.
